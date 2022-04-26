@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>La tour de maths [INDEV]</title>
+  <script src="javascript/mathproblems.js"></script>
+  <script src="javascript/code.js"></script>
+  <style>
+    .question {
+      height:50px;
+      width:100px;
+      border:solid 5px #088;
+      background-color:#0aa;
+      font-size:24px;
+      text-align:center;
+      vertical-align:middle;
+      position:relative;
+    }
+  </style>
+</head>
+<body>
+  <div style="border:solid;height:720px;width:640px;">
+    <div style="border:solid;height:576px;width:640px;vertical-align:bottom;text-align:center;display:table-cell;" id="board">
+      <table>
+        <td style="width:110px;height:570px;border: 5px solid;vertical-align:bottom;" id="col0"></td>
+        <td style="width:110px;height:570px;border: 5px solid;vertical-align:bottom;" id="col1"></td>
+        <td style="width:110px;height:570px;border: 5px solid;vertical-align:bottom;" id="col2"></td>
+        <td style="width:110px;height:570px;border: 5px solid;vertical-align:bottom;" id="col3"></td>
+        <td style="width:110px;height:570px;border: 5px solid;vertical-align:bottom;" id="col4"></td>
+      </table>
+    </div>
+    <button onclick="dif_easy()" id="easy">Facile</button><br>
+    <button onclick="dif_normal()" id="normal">Normale</button><br>
+    <button onclick="dif_hard()" id="hard">Expert</button><br>
+    <input type="text" id="answerbox"></input>
+    <p>score: <span id="score">0</span></p>
+  </div>
+</body>
+</html>
