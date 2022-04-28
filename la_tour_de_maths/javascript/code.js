@@ -68,9 +68,8 @@ function spawn_block() {
 }
 
 function spawn_first() {
-  document.getElementById("easy").style.display = "none";
-  document.getElementById("normal").style.display = "none";
-  document.getElementById("hard").style.display = "none";
+  document.getElementById("difficulty_select").style.display = "none";
+  document.getElementById("input").style.display = "block";
   document.getElementById("answerbox").focus();
   spawn_block();
 }
